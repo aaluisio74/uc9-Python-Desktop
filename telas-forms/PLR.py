@@ -226,7 +226,7 @@ btn_limp.grid(
 )
 
 
-# Quadro de exibição dos resultados
+# Quadro de exibição dos resultados.
 lbl_resultado = tk.Label(
     janela,
     text="",
