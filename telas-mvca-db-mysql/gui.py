@@ -6,7 +6,12 @@ class AplicaçãoLogin:
     def __init__(self, root):
         self.root = root
         self.root.title("Sistema de Acesso")
-        self.root.geometry("350x250")
+        
+        # --- ALTERAÇÃO 1: Definir dimensões e centralizar a janela ---
+        largura = 350
+        altura = 250
+        self.centralizar_janela(largura, altura)
+        
         self.root.resizable(False, False)
 
         # Container principal para alternar telas
@@ -15,6 +20,19 @@ class AplicaçãoLogin:
 
         # Inicia abrindo a tela de Login
         self.criar_tela_login()
+
+    # --- ALTERAÇÃO 2: Novo método adicionado para calcular a centralização ---
+    def centralizar_janela(self, largura, altura):
+        """Calcula a posição central da tela e ajusta a geometria da janela."""
+        self.root.update_idletasks()  # Garante que as dimensões corretas da tela sejam obtidas
+        
+        largura_tela = self.root.winfo_screenwidth()
+        altura_tela = self.root.winfo_screenheight()
+
+        pos_x = (largura_tela // 2) - (largura // 2)
+        pos_y = (altura_tela // 2) - (altura // 2)
+
+        self.root.geometry(f"{largura}x{altura}+{pos_x}+{pos_y}")
 
     def limpar_container(self):
         """Remove todos os widgets da tela atual para desenhar a próxima."""
@@ -99,4 +117,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AplicaçãoLogin(root)
     root.mainloop()
-    
