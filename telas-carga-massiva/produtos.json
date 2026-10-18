@@ -1,0 +1,122 @@
+[
+    {
+        "codigo": 101,
+        "produto": "Teclado",
+        "quantidade": 45,
+        "preco": 160.26
+    },
+    {
+        "codigo": 102,
+        "produto": "Mouse",
+        "quantidade": 22,
+        "preco": 316.52
+    },
+    {
+        "codigo": 103,
+        "produto": "Monitor",
+        "quantidade": 13,
+        "preco": 891.67
+    },
+    {
+        "codigo": 104,
+        "produto": "Headset",
+        "quantidade": 48,
+        "preco": 896.58
+    },
+    {
+        "codigo": 105,
+        "produto": "Gabinete",
+        "quantidade": 10,
+        "preco": -50.0
+    },
+    {
+        "codigo": 106,
+        "produto": "Webcam",
+        "quantidade": 39,
+        "preco": 131.72
+    },
+    {
+        "codigo": 107,
+        "produto": "Microfone",
+        "quantidade": 32,
+        "preco": 67.19
+    },
+    {
+        "codigo": 108,
+        "produto": "Cadeira Gamer",
+        "quantidade": 10,
+        "preco": 285.81
+    },
+    {
+        "codigo": 109,
+        "produto": "Mousepad",
+        "quantidade": 37,
+        "preco": 734.36
+    },
+    {
+        "codigo": 110,
+        "produto": "Caixa de Som",
+        "quantidade": 40,
+        "preco": 262.64
+    },
+    {
+        "codigo": 111,
+        "produto": "HD Externo",
+        "quantidade": 46,
+        "preco": 850.55
+    },
+    {
+        "codigo": 112,
+        "produto": "SSD 1TB",
+        "quantidade": 0,
+        "preco": 150.0
+    },
+    {
+        "codigo": 113,
+        "produto": "Memória RAM 16GB",
+        "quantidade": 31,
+        "preco": 287.92
+    },
+    {
+        "codigo": 114,
+        "produto": "Placa de Vídeo",
+        "quantidade": 42,
+        "preco": 355.48
+    },
+    {
+        "codigo": 115,
+        "produto": "Processador",
+        "quantidade": 5,
+        "preco": 917.8
+    },
+    {
+        "codigo": 116,
+        "produto": "Placa Mãe",
+        "quantidade": 15,
+        "preco": 846.82
+    },
+    {
+        "codigo": 117,
+        "produto": "Fonte 650W",
+        "quantidade": 26,
+        "preco": 355.11
+    },
+    {
+        "codigo": 118,
+        "produto": "Cooler CPU",
+        "quantidade": 18,
+        "preco": 1149.94
+    },
+    {
+        "codigo": 119,
+        "produto": "Nobreak",
+        "quantidade": 26,
+        "preco": 149.59
+    },
+    {
+        "codigo": 120,
+        "produto": "Filtro de Linha",
+        "quantidade": 29,
+        "preco": 143.16
+    }
+]

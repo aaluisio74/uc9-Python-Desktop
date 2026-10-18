@@ -37,7 +37,7 @@ VALUES (?, ?, ?, ?)
 
 # Confirmar as alterações 
 conexao.commit() 
-'''
+
 # EXEMPLO 1: SELECT simples (todos os registros) 
 cursor.execute("SELECT * FROM clientes") 
 todos_clientes = cursor.fetchall() # Retorna uma lista de tuplas 
@@ -75,8 +75,8 @@ for cliente in primeiros_5:
 # EXEMPLO 6: SELECT com COUNT (contar registros) 
 cursor.execute("SELECT COUNT(*) FROM clientes") 
 total = cursor.fetchone()[0] # fetchone() retorna uma tupla com um elemento 
-print(f"\nTotal de clientes: {total}") 
-'''
+print(f"\nTotal de clientes: {total}")
+
 # EXEMPLO 7: SELECT com LIKE (busca parcial) 
 cursor.execute("SELECT nome FROM clientes WHERE nome LIKE '%Silva%'") 
 clientes_silva = cursor.fetchall() 
