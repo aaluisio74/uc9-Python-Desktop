@@ -19,6 +19,11 @@ class Estudante(Base):
     email: Mapped[str] = mapped_column(
         String(254), unique=True, index=True, nullable=False
     )
+    ativo: Mapped[bool] = mapped_column(
+    default=True,
+    nullable=False
+    )
+
 
     # Um estudante pode ter várias matrículas.
     matriculas: Mapped[list["Matricula"]] = relationship(
