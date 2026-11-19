@@ -1,34 +1,33 @@
-# PARTE 1 — Importações dos testes
-from fastapi.testclient import TestClient
 
-from app.main import app
-
-
-# PARTE 2 — Cliente HTTP de testes
-# Este exemplo verifica o bloqueio de acesso sem autenticação.
-client = TestClient(app)
+# ============================================================
+# ARQUIVO: tests/test_api.py
+# RESPONSABILIDADE: testar os endpoints e a segurança da API
+# ============================================================
 
 
-# PARTE 3 — Teste de segurança
-def test_listar_estudantes_sem_token():
-    resposta = client.get("/estudantes")
+# PARTE 1 — TESTAR acesso sem autenticação
 
-    assert resposta.status_code == 401
-    
-# PARTE 1 — TESTAR proteção da API
+def test_listar_estudantes_sem_token(cliente):
 
-def test_acesso_sem_autenticacao(ambiente_teste):
-
-    resposta = ambiente_teste.get("/estudantes")
+    resposta = cliente.get("/estudantes")
 
     assert resposta.status_code == 401
 
 
-# PARTE 2 — TESTAR login com dados inválidos
+# PARTE 2 — TESTAR proteção da API
 
-def test_login_com_credenciais_invalidas(ambiente_teste):
+def test_acesso_sem_autenticacao(cliente):
 
-    resposta = ambiente_teste.post(
+    resposta = cliente.get("/estudantes")
+
+    assert resposta.status_code == 401
+
+
+# PARTE 3 — TESTAR login com credenciais inválidas
+
+def test_login_com_credenciais_invalidas(cliente):
+
+    resposta = cliente.post(
         "/token",
         data={
             "username": "usuario_inexistente",
